@@ -1,0 +1,309 @@
+
+/* NÃO TEM RESPONSIVIDADE NO SITE POIS NAO TIVE MUITO TEMPO DE REALIZAR A AVALIAÇÃO */ 
+
+
+
+/* BODY////////////////////////////////////////////////////////////////*/
+
+
+body{
+    background-image: linear-gradient(to top, #000000 0%, #353535 100%);
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    
+}
+
+
+/*////////////////////////////////////////////////////////////////////*/
+
+
+/* TUDO DO MENU  /////////////////////////////////////////////////////////////*/
+
+/*ESSE MENU MUDA DE COR SOZINHO*/ 
+
+nav{
+    animation: gradient 10s ease infinite; /*animação = nome dela,o tempo, a velocidade, e infinito para o processo */
+    background: linear-gradient(-45deg, #16aa91 ,#a34181,#754fbb,#3a23c0);/* */
+    background-size: 200% 200%;/* Aumenta o tamanho do fundo sendo altura e largura*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: #ffffff;
+    font-family: 'Ramabhadra';
+    height:auto;
+    width: 100%;
+    border-bottom:solid #000000 2px;
+    position: fixed;
+    top: 0%;
+}
+
+@keyframes gradient {/*no lugar do gradient é nome para ser identificado no animation*/
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+.linicio{
+    margin: 10px;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Ramabhadra';
+    display: inline-block;
+    display: inline;
+    list-style: none;
+    color: #ffffff;
+}
+.ulmenu{
+    list-style: none;
+    display: flex;
+}
+.escola{
+    color: #df1010d3 ;
+    font-style: italic;
+}
+.nomecurso{
+    margin-right: 680px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#ancora1:hover{
+    color: #1ba5af;
+}
+/*//////////////////////////////////////////////////////////////////////*/
+
+
+
+/* MENSAGEM DE INICIO //////////////////////////////////////////////////*/
+
+.inicio{
+    height: auto;
+    align-items:center ;
+    text-align: left;
+    margin: 100px;
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-top: 200px;   
+    box-shadow: 5px 15px 15px 5px;
+    border-radius: 15px;
+    background: linear-gradient(to top, #763be2 0%, #25d4cc 100%);
+}
+
+.recepcao{
+    font-family: 'Oswald';
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin: 25px;
+    padding: 30px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-family: 'Oswald';
+    font-size: 30px;
+    background: -webkit-linear-gradient(rgb(31, 7, 3), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p{
+    color: white;
+}
+.objetivo{
+    font-family: 'Oswald';
+    font-size: 20px;
+    margin: 30px;
+    padding: 30px;
+}
+h4{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+/*//////////////////////////////////////////////////////////////////////*/
+
+
+
+
+/* Cards das matérias do curso */
+
+
+
+.conteudo{
+    height: auto;
+    width: 100%;
+    display: grid;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-items: center;
+    grid-template-rows:1fr 1fr 1fr ; /**/
+    grid-template-columns:1fr 1fr 1fr 1fr  ;    /**/
+    grid-column-gap: 5px ;/**/
+    grid-gap: 5px;/**/
+    
+}
+
+
+/* Cards ////////////////////////////////////////////////////////////////*/
+.card1{
+    height: 900px;
+    width: 90%;
+    margin: 5%;
+    border-radius: 10px;
+    border: #000000 solid 2px;
+
+    background-color: #FF865D;
+    box-shadow: #000000 5px 10px 10px 5px;
+
+    grid-column-start: 1 ;/* grade da coluna numero um do começo*/
+    grid-column-end: 5;/*grade da coluna numero 3 com maximo até 4 do final*/
+    grid-row-end: 1;
+}
+.card2{
+    height: 500px;
+    width: 90%;
+    margin: 5%;
+    border-radius: 10px;
+    border: #000000 solid 2px;
+
+    background-color: #FA3F5B;
+    box-shadow: #000000 5px 10px 10px 5px;
+
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    grid-row-end: 2;
+}
+.card3{
+    height: 600px;
+    width: 90%;
+    margin: 5%;
+    border-radius: 10px;
+    border: #000000 solid 2px;
+
+
+    background-color: #9484E0;
+    box-shadow: #000000 5px 10px 10px 5px;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-end: 3;
+}
+.card4{
+    height: 500px;
+    width: 90%;
+    margin: 5%;
+    margin-bottom: 20px;
+    border: #000000 solid 2px;
+
+    border-radius: 10px ;
+    box-shadow: #000000 5px 10px 10px 5px;
+    background-color: #007C68;
+    
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-end: 4;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+
+
+/* Imagens ////////////////////////////////////////////////////////////*/
+.imagens{
+    margin: 20px;
+}
+.imagens img{
+    border-radius: 100%;
+}
+/*//////////////////////////////////////////////////////////////////////*/
+
+
+
+
+/*Titulos dos Cards ////////////////////////////////////////////////////*/
+
+.LIMA-titulo{
+    color: #ffffff;
+    font-family: 'Kanit';
+    margin: 5px;
+}
+
+.HARE-titulo{
+    color: #ffffff;
+    font-family: 'Kanit';
+    margin: 5px;
+}
+
+.SOP-titulo{
+    color: #ffffff;
+    font-family: 'Kanit';
+    margin: 5px;
+}
+
+.FPOO-titulo{
+    color: #ffffff;
+    font-family: 'Kanit';
+    margin: 5px;
+}
+
+/*///////////////////////////////////////////////////////////////////*/ 
+
+
+
+/*CONTEUDO DOS CARDS ////////////////////////////////////////////////*/ 
+
+.corpo{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr ; /**/
+    grid-template-columns:1fr 1fr 1fr ;    /**/
+    grid-column-gap: 10px ;/**/
+    grid-gap: 10px;/**/
+
+}
+.conteudodasmaterias{
+    margin-top: 100px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-end: 2;
+    font-family: 'Kanit';
+    font-size: 20px;
+    margin-right: 90px;
+}
+h5{
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    
+}
+
+/*///////////////////////////////////////////////////////////////////*/ 
+
+
+/*FOOTER ///////////////////////////////////////////////////////////*/ 
+
+
+footer{
+    height: 350px;
+    width: 100%;
+    background-color: #3a3939;
+}
+.gridfooter1{
+    text-align: center;
+    font-family: 'Kanit';  
+}
+h6{
+    font-size: 25px;
+    color: #ffffff; 
+    margin: 30px; 
+}
+
+/*///////////////////////////////////////////////////////////////////*/ 
